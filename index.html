@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Menu</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000 family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Start page -->
+    <div class="page">
+        
+        <!-- Start Navbar  -->
+        <nav class="navbar overflow-hidden">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <div class="icon fs-3 text-white position-relative">
+                    <i class="fas fa-bell"></i>
+                    <span class="count_not position-absolute overflow-hidden">3</span>
+                </div>
+                <a class="logo navbar-brand d-block position-relative" href="#">
+                    <img src="./img/logo.png" alt="logo" loading="lazy">
+                </a>
+            </div>
+        </nav>
+        <!-- End Navbar  -->
+        
+        <!-- -------**********------- -->
+        
+        <!-- Start Sidebar -->
+        <section class="sidebar position-fixed">
+            <ul class="links d-flex flex-column align-items-center gap-4">
+                <li>
+                    <a href="#menu" class="active_link">
+                        <i class="fa-regular fa-square-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#orders" class="">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#users" class="">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- End Sidebar -->
+        
+        <!-- -------**********------- -->
+
+        <!-- Start Cart -->
+        <section class="cart position-fixed">
+
+            <!-- Open & Close Cart -->
+            <button class="open_close_cart position-absolute">
+                <i class="icon_cart fa-solid fa-cart-shopping"></i>
+            </button>
+
+            <div class="cart_scr d-flex flex-column justify-content-between">
+                <div class="head_cart">
+                    <!-- Chose Button -->
+                    <div class="chose_btn position-relative d-flex justify-content-between align-items-center gap-2">
+                        <button class="active_chose">طاولة</button>
+                        <button>سفري</button>
+                        <button>توصيل</button>
+                    </div>
+        
+                    <!-- Input_user -->
+                    <div class="input_user input-group mt-2" dir="ltr">
+                        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">
+                            <i class="fa-regular fa-user text-white"></i>
+                        </span>
+                    </div>
+        
+                    <!-- Invoices -->
+                    <div class="invoices mt-2 overflow-hidden bg-white">
+        
+                        <!-- Head -->
+                        <div class="head d-flex justify-content-between align-items-center p-2">
+                            <div class="invoice">
+                                فاتورة رقم : <span id="invoice_num">255</span>
+                            </div>
+                            <div class="dining_table">
+                                طاولة : <span id="dining_table_num">15</span>
+                            </div>
+                        </div>
+        
+                        <!-- Invoices Table -->
+                        <div class="invoices_table d-flex flex-column p-2 shadow-sm overflow-y-auto">
+        
+                            <!-- Item -->
+                            <div class="item d-flex gap-3 align-items-center justify-content-between">
+                                <!-- Title -->
+                                <div class="title">
+                                    <p class="p-0 m-0">وجبة بروستد (حجم كبير)</p>
+                                </div>
+                                <!-- --------- -->
+                                <div class="d-flex justify-content-between align-items-center gap-3">
+                                    <!-- Counter -->
+                                    <div class="counter rounded-2 position-relative overflow-hidden d-flex justify-content-center align-items-center">
+                                        <button class="minus position-absolute left-0">-</button>
+                                        <p class="num d-flex justify-content-center align-items-center m-0 p-0"></p>
+                                        <button class="plus position-absolute right-0">+</button>
+                                    </div>
+                                    
+                                    <!-- Price -->
+                                    <div class="price">
+                                        25.75
+                                    </div>
+                                    
+                                    <!-- bin -->
+                                    <button class="bin">
+                                        <i class="fas fa-trash-can"></i>
+                                    </button>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                    </div>
+                    <!-- Note -->
+                    <div class="note mt-2 rounded-3 overflow-hidden">
+                        <textarea name="note" id="note" placeholder="ملاحظة"></textarea>
+                    </div>
+        
+                    <!-- Total Price -->
+                    <div class="total_price mt-1 bg-white py-1 px-2 rounded-2">
+                        <!-- Order value -->
+                        <div class="order_value d-flex align-items-center justify-content-between border-bottom py-1">
+                            <span>قيمة الطلب</span>
+                            <span class="fw-medium">25.75</span>
+                        </div>
+                        
+                        <!-- Added tax -->
+                        <div class="added_tax d-flex align-items-center justify-content-between border-bottom py-1">
+                            <span>الضريبة المضافة</span>
+                            <span class="fw-medium">00.00</span>
+                        </div>
+        
+                        <!-- Delivery Fees -->
+                        <div class="delivery_fees d-flex align-items-center justify-content-between border-bottom py-1">
+                            <span>اجور توصيل</span>
+                            <span class="fw-medium">00.00</span>
+                        </div>
+        
+                        <!-- Discount -->
+                        <div class="discount d-flex align-items-center justify-content-between border-bottom py-1 color-red">
+                            <span>الخصم</span>
+                            <span class="fw-medium">5.00-</span>
+                        </div>
+                        
+                        <!-- grand total -->
+                        <div class="grand_total d-flex align-items-center justify-content-between border-top py-1 color-red">
+                            <span>المجموع الاجمالي</span>
+                            <span class="fw-medium">20.00</span>
+                        </div>
+        
+                    </div>
+                </div>
+                
+                <div class="foot_cart">
+                    <!-- Buttons -->
+                    <div class="buttons mt-2">
+                        <div class="mo">
+                            <button type="button" class="btn text-white" style="width: 32%; background-color: #ff0000;">
+                                <span>إلغاء </span>
+                                <img src="./img/trash.svg" style="width: 15px; height: 20px;" loading="lazy" alt="fees">
+                            </button>
+                            <button type="button" class="btn text-white" style="width: 32%; background-color: #f87f16;">
+                                <span>رسوم</span>
+                                <img src="./img/fees.svg" style="width: 22px; height: 22px;" loading="lazy" alt="fees">
+                            </button>
+                            <button type="button" class="btn text-white" style="width: 32%; background-color: #09aa29;">
+                                <span>خصم</span>
+                                <img src="./img/discount.svg" style="width: 22px; height: 22px;" loading="lazy" alt="fees">
+                            </button>
+                        </div>
+                        <div class="to mt-2">
+                            <button type="button" class="btn text-white" style="width: 32%; background-color: #ed5026;">
+                                <span>طباعة</span>
+                                <img src="./img/print.svg" style="width: 22px; height: 22px;" loading="lazy" alt="fees">
+                            </button>
+                            <button type="button" class="btn text-white" style="width: 32%; background-color: #ed5026;">
+                                <span>كاش</span>
+                                <img src="./img/cash.svg" style="width: 22px; height: 22px;" loading="lazy" alt="fees">
+                            </button>
+                            <button type="button" class="btn text-white" style="width: 32%; background-color: #ed5026;">
+                                <span>كارت</span>
+                                <img src="./img/cart.svg" style="width: 22px; height: 22px;" loading="lazy" alt="fees">
+                            </button>
+                        </div>
+                        <div class="ev mt-2">
+                            <button type="button" class="btn py-2 fw-bold fs-6 text-white" style="width: 48.5%; background-color: #09aa29;">طلب</button>
+                            <button type="button" class="btn py-2 fw-bold fs-6 text-white" style="width: 48.5%; background-color: #f87f16;">تعديل</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End Cart -->
+
+        <!-- ************************************************* -->
+
+        <!-- Start Content -->
+        <section class="content">
+
+            <!-- Header -->
+            <div class="header_cont">
+                <div class="head_cont d-flex align-items-center justify-content-between">
+                    <div class="but">
+                        <button type="button" class="btn text-white" style="background-color: #ed5026;">عرض الكل</button>
+                    </div>
+                    <div class="search">
+                        <div class="search-container">
+                            <input type="text" class="search-input">
+                            <button class="search-button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat mt-2 overflow-x-auto d-flex gap-1 py-2">
+                    <button type="button" class="btn text-white" style="background-color: #36024a;">مشاوي</button>
+                </div>
+            </div>
+
+            <!-- Items -->
+            <div class="pro_items p-3 rounded-2 d-flex flex-column gap-2">
+                
+                <!-- Row_1 -->
+                <div class="row justify-content-center gap-2">
+                    <!-- box_item_1 -->
+                    <div class="box_item rounded-3 col-sm-4 col-md-3 col-xl">
+                        <img src="./img/ittt.png" loading="lazy" alt="item">
+                        <div class="details_item position-absolute d-flex align-items-center gap-3 justify-content-around">
+                            <div class="name">
+                                وجبة بروستد <br>
+                                حجم كبير
+                            </div>
+                            <div class="price fs-4 fw-medium">
+                                25.75
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box_item_1 -->
+                    <div class="box_item rounded-3 col-sm-4 col-md-3 col-xl">
+                        <img src="./img/ittt.png" loading="lazy" alt="item">
+                        <div class="details_item position-absolute d-flex align-items-center gap-3 justify-content-around">
+                            <div class="name">
+                                وجبة بروستد <br>
+                                حجم كبير
+                            </div>
+                            <div class="price fs-4 fw-medium">
+                                25.75
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box_item_1 -->
+                    <div class="box_item rounded-3 col-sm-4 col-md-3 col-xl">
+                        <img src="./img/ittt.png" loading="lazy" alt="item">
+                        <div class="details_item position-absolute d-flex align-items-center gap-3 justify-content-around">
+                            <div class="name">
+                                وجبة بروستد <br>
+                                حجم كبير
+                            </div>
+                            <div class="price fs-4 fw-medium">
+                                25.75
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box_item_1 -->
+                    <div class="box_item rounded-3 col-sm-4 col-md-3 col-xl">
+                        <img src="./img/ittt.png" loading="lazy" alt="item">
+                        <div class="details_item position-absolute d-flex align-items-center gap-3 justify-content-around">
+                            <div class="name">
+                                وجبة بروستد <br>
+                                حجم كبير
+                            </div>
+                            <div class="price fs-4 fw-medium">
+                                25.75
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- End Content -->
+        
+    </div>
+    <!-- End page -->
+    
+    <!-- ************************************************* -->
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
