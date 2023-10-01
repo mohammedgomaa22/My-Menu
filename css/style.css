@@ -470,3 +470,11 @@ nav .navbar-brand img {
 /* *********Content Orders & Users********* */
 
 /* End Content  */
+
+/* Start Modal */
+
+.modals #tables_popup .num input:checked + .btn-success {
+    background-color: #ec2525;
+}
+
+/* End Modal */

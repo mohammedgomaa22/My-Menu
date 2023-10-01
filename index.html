@@ -18,6 +18,144 @@
     <!-- Start page -->
     <div class="page">
         
+        <!-- Start Modals  -->
+        <div class="modals">
+            <!-- Tables Modal -->
+            <div class="modal fade" id="tables_popup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="tables_popupLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered mx-auto" style="width: fit-content; max-width: 470px;">
+                    <div class="modal-content">
+                        <div class="modal-body d-flex align-items-center flex-row-reverse gap-2 flex-wrap" style="width: fit-content; max-width: 310px;">
+                            <div class="num">
+                                <input type="checkbox" class="btn-check" id="btn-check_1" autocomplete="off">
+                                <label class="btn btn-success fs-4 px-3 fw-bold" for="btn-check_1">1</label>
+                            </div>
+                            <div class="num">
+                                <input type="checkbox" class="btn-check" id="btn-check_2" autocomplete="off">
+                                <label class="btn btn-success fs-4 px-3 fw-bold" for="btn-check_2">2</label>
+                            </div>
+                            <div class="num">
+                                <input type="checkbox" class="btn-check" id="btn-check_3" autocomplete="off" checked>
+                                <label class="btn btn-success fs-4 px-3 fw-bold" for="btn-check_3">3</label>
+                            </div>
+                            <div class="num">
+                                <input type="checkbox" class="btn-check" id="btn-check_4" autocomplete="off">
+                                <label class="btn btn-success fs-4 px-3 fw-bold" for="btn-check_4">4</label>
+                            </div>
+                            <div class="num">
+                                <input type="checkbox" class="btn-check" id="btn-check_5" autocomplete="off">
+                                <label class="btn btn-success fs-4 px-3 fw-bold" for="btn-check_5">5</label>
+                            </div>
+                            <div class="num">
+                                <input type="checkbox" class="btn-check" id="btn-check_6" autocomplete="off">
+                                <label class="btn btn-success fs-4 px-3 fw-bold" for="btn-check_6">6</label>
+                            </div>
+                            <div class="num">
+                                <input type="checkbox" class="btn-check" id="btn-check_7" autocomplete="off" checked>
+                                <label class="btn btn-success fs-4 px-3 fw-bold" for="btn-check_7">7</label>
+                            </div>
+                            <div class="num">
+                                <input type="checkbox" class="btn-check" id="btn-check_8" autocomplete="off">
+                                <label class="btn btn-success fs-4 px-3 fw-bold" for="btn-check_8">8</label>
+                            </div>
+                            <div class="num">
+                                <input type="checkbox" class="btn-check" id="btn-check_9" autocomplete="off">
+                                <label class="btn btn-success fs-4 px-3 fw-bold" for="btn-check_9">9</label>
+                            </div>
+                            <div class="num rounded-3" style="width: 47px; height: 47px; overflow: hidden;">
+                                <input type="checkbox" class="btn-check" id="btn-check_10" autocomplete="off" checked>
+                                <label class="btn btn-success fs-4 fw-bold" for="btn-check_10">10</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn rounded-3 py-1 px-4 btn-success">إضافة</button>
+                            <button type="button" class="btn rounded-3 py-1 px-4 btn-danger" data-bs-dismiss="modal">إلغاء</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FEES Modal -->
+            <div class="modal fade" id="fees_popup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="fees_popupLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered mx-auto" style="max-width: 270px;">
+                    <div class="modal-content">
+                        <div class="modal-header p-2 text-light" style="background-color: #36024a;">
+                            <h1 class="modal-title fs-6 text-center mx-auto" id="fees_popupLabel">إضافة رسوم</h1>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Select fee -->
+                            <div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="tax_select">
+                                    <label class="form-check-label" style="user-select: none; cursor: pointer;" for="tax_select">الضريبة المضافة</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="delevery_select" checked>
+                                    <label class="form-check-label" style="user-select: none; cursor: pointer;" for="delevery_select">اجور التوصيل</label>
+                                </div>
+                            </div>
+
+                            <!-- select num -->
+                            <div class="mt-2 d-flex align-items-center justify-content-center">
+                                <div class="form-check form-check-inline d-flex align-items-center">
+                                    <input class="form-check-input" style="cursor: pointer;" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label style="cursor: pointer; user-select: none;" class="form-check-label px-3 me-4 py-0 rounded-3 mt-1 bg-light" for="inlineCheckbox1">5</label>
+                                </div>
+                                <div class="form-check form-check-inline d-flex align-items-center">
+                                    <input class="form-check-input" style="cursor: pointer;" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label style="cursor: pointer; user-select: none;" class="form-check-label px-3 me-4 py-0 rounded-3 mt-1 bg-light" for="inlineCheckbox2">7</label>
+                                </div>
+                                <div class="form-check form-check-inline d-flex align-items-center">
+                                    <input class="form-check-input" style="cursor: pointer;" type="checkbox" id="inlineCheckbox3" value="option2">
+                                    <label style="cursor: pointer; user-select: none;" class="form-check-label px-3 me-4 py-0 rounded-3 mt-1 bg-light" for="inlineCheckbox3">7</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn rounded-3 py-1 px-4 btn-success">إضافة</button>
+                            <button type="button" class="btn rounded-3 py-1 px-4 btn-danger" data-bs-dismiss="modal">إلغاء</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DISCOUNT Modal -->
+            <div class="modal fade" id="discount_popup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="discount_popupLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered mx-auto" style="max-width: 270px;">
+                    <div class="modal-content">
+                        <div class="modal-header p-2 text-light" style="background-color: #36024a;">
+                            <h1 class="modal-title fs-6 text-center mx-auto" id="discount_popupLabel">إضافة خصم</h1>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form mx-auto d-flex align-items-center gap-2" style="width: fit-content;">
+                                <input type="text" class="rounded-1 p-1 text-center" value="20"
+                                    style="width: 50px; outline: none; border: 1px solid #36024a;">
+                                <!-- Radio  -->
+                                <input type="radio" class="btn-check rounded-1 p-1" name="options-discount" id="percent-discount"
+                                    autocomplete="off" checked>
+                                <label class="btn btn-outline-dark" for="percent-discount">%</label>
+                            
+                                <input type="radio" class="btn-check rounded-1 p-1" name="options-discount" id="dollar-discount"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-dark" for="dollar-discount">$</label>
+                            
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn rounded-3 py-1 px-4 btn-success">إضافة</button>
+                            <button type="button" class="btn rounded-3 py-1 px-4 btn-danger" data-bs-dismiss="modal">إلغاء</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modals  -->
+
+        <!-- -------**********------- -->
+
         <!-- Start Navbar  -->
         <nav class="navbar overflow-hidden">
             <div class="container-fluid d-flex justify-content-between align-items-center">
@@ -75,9 +213,9 @@
                 <div class="head_cart">
                     <!-- Chose Button -->
                     <div class="chose_btn position-relative d-flex justify-content-between align-items-center gap-2">
-                        <button class="active_chose">طاولة</button>
+                        <button data-bs-toggle="modal" data-bs-target="#tables_popup">طاولة</button>
                         <button>سفري</button>
-                        <button>توصيل</button>
+                        <button class="active_chose">توصيل</button>
                     </div>
         
                     <!-- Input_user -->
@@ -134,6 +272,7 @@
                         </div>
         
                     </div>
+
                     <!-- Note -->
                     <div class="note mt-2 rounded-3 overflow-hidden">
                         <textarea name="note" id="note" placeholder="ملاحظة"></textarea>
@@ -182,11 +321,11 @@
                                 <span>إلغاء </span>
                                 <img src="./img/trash.svg" style="width: 15px; height: 20px;" loading="lazy" alt="fees">
                             </button>
-                            <button type="button" class="btn text-white" style="width: 32%; background-color: #f87f16;">
+                            <button type="button" class="btn text-white" style="width: 32%; background-color: #f87f16;" data-bs-toggle="modal" data-bs-target="#fees_popup">
                                 <span>رسوم</span>
                                 <img src="./img/fees.svg" style="width: 22px; height: 22px;" loading="lazy" alt="fees">
                             </button>
-                            <button type="button" class="btn text-white" style="width: 32%; background-color: #09aa29;">
+                            <button type="button" class="btn text-white" style="width: 32%; background-color: #09aa29;" data-bs-toggle="modal" data-bs-target="#discount_popup">
                                 <span>خصم</span>
                                 <img src="./img/discount.svg" style="width: 22px; height: 22px;" loading="lazy" alt="fees">
                             </button>
@@ -245,7 +384,7 @@
             <div class="pro_items p-3 rounded-2 d-flex flex-column gap-2">
                 
                 <!-- Row_1 -->
-                <div class="row justify-content-center gap-2">
+                <div class="row gap-2">
                     <!-- box_item_1 -->
                     <div class="box_item rounded-3 col-sm-4 col-md-3 col-xl">
                         <img src="./img/ittt.png" loading="lazy" alt="item">
@@ -299,7 +438,7 @@
                         </div>
                     </div>
                 </div>
-
+                
             </div>
         </section>
         <!-- End Content -->
