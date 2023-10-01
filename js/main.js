@@ -67,17 +67,22 @@ deleteItems();
 
 // ------------------------------------
 
-// Open Cart
-    // ------------
-    // open cart
-    const openCart = () => {
-        cartBtn.addEventListener("click", () => {
-            if (sidebar.classList.contains("open_cart")) {
-                sidebar.classList.remove("open_cart")
-            } else {
-                sidebar.classList.add("open_cart");
-            }
-        });
-    };
-    openCart();
+// open cart
+const openCart = () => {
+    cartBtn.addEventListener("click", () => {
+        if (sidebar.classList.contains("open_cart")) {
+            sidebar.classList.remove("open_cart")
+        } else {
+            sidebar.classList.add("open_cart");
+        }
+    });
+};
+openCart();
 
+// ------------------------------------
+
+// Create Select Option
+// const createOrderPage = () => {
+    
+// };
+// createOrderPage();

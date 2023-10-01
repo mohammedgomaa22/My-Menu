@@ -296,6 +296,7 @@ nav .navbar-brand img {
 /* <!-- -------**********------- --> */
 
 /* Start Content  */
+/* *********Content Menu********* */
 .content {
     background-color: #ececec;
     height: calc(100vh - 77px);
@@ -311,6 +312,7 @@ nav .navbar-brand img {
         width: calc(100% - 65px);
     }
 }
+
 
 .content .head_cont .search {
     position: relative;
@@ -372,5 +374,99 @@ nav .navbar-brand img {
     width: 100%;
     text-align: center;
 }
+/* *********Content Menu********* */
+
+/* *********Content Orders & Users********* */
+.content_table_orders ,
+.content_table_users {
+    width: calc(100% - 65px);
+}
+@media (min-width: 767px) {
+    .content_table_orders ,
+    .content_table_users {
+        padding-right: 50px;
+    }
+}
+.content_table_orders .head_cont .title ,
+.content_table_users .head_cont .title {
+    color: #36024a;
+    font-size: 22px;
+}
+.content_table_orders .select_num select ,
+.content_table_users .select_num select {
+    /* width: 50px; */
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid #b2b2b2;
+    outline: none;
+}
+.content_table_orders .table_cont ,
+.content_table_users .table_cont {
+    overflow-x: auto;
+    max-height: calc(100% - 85px);
+    overflow-y: auto;
+}
+.content_table_orders table ,
+.content_table_users table {
+    border-radius: 7px;
+    overflow: hidden;
+    min-width: 1000px;
+}
+.content_table_orders table thead tr th ,
+.content_table_users table thead tr th {
+    padding: 15px 5px;
+    text-align: center;
+    background-color: #36024a;
+    color: white;
+}
+.content_table_orders table tbody tr ,
+.content_table_users table tbody tr {
+    text-align: center;
+}
+.content_table_orders table tbody tr th,
+.content_table_orders table tbody tr td ,
+.content_table_users table tbody tr th,
+.content_table_users table tbody tr td {
+    color: #36024A;
+    line-height: 3;
+}
+.content_table_orders table tbody tr td.order_state span {
+    background-color: #86c83c;
+}
+.content_table_orders table tbody tr td.order_payment_done span {
+    background-color: #e2f2cf;
+    color: #2ab542;
+}
+.content_table_orders table tbody tr td.order_payment span {
+    background-color: #ffc0c0;
+    color: #ff2626;
+}
+.content_table_orders table tbody tr td.order_show button {
+    height: 25px;
+    width: 25px;
+    background-color: #09aa29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.content_table_orders table tbody tr td.order_show button img {
+    width: 25px;
+    height: 25px;
+}
+
+.content_table_users table tbody tr td.user_edit .btns {
+    width: fit-content;
+    margin: 3px auto;
+}
+.content_table_users table tbody tr td.user_edit button {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* *********Content Orders & Users********* */
 
 /* End Content  */

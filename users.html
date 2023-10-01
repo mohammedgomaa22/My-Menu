@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Menu</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000 family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Start page -->
+    <div class="page">
+        
+        <!-- Start Navbar  -->
+        <nav class="navbar overflow-hidden">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <div class="icon fs-3 text-white position-relative">
+                    <i class="fas fa-bell"></i>
+                    <span class="count_not position-absolute overflow-hidden">3</span>
+                </div>
+                <a class="logo navbar-brand d-block position-relative" href="#">
+                    <img src="./img/logo.png" alt="logo" loading="lazy">
+                </a>
+            </div>
+        </nav>
+        <!-- End Navbar  -->
+        
+        <!-- -------**********------- -->
+        
+        <!-- Start Sidebar -->
+        <section class="sidebar position-fixed">
+            <ul class="links d-flex flex-column align-items-center gap-4">
+                <li>
+                    <a href="./menu.html" class="">
+                        <i class="fa-regular fa-square-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./orders.html" class="">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./users.html" class="active_link">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- End Sidebar -->
+        
+        <!-- ************************************************* -->
+
+        <!-- Start Content -->
+        <section class="content content_table_users">
+
+            <!-- Header -->
+            <div class="header_cont">
+                <div class="head_cont d-flex align-items-center justify-content-between">
+                    <div class="title">
+                        سجل العملاء
+                    </div>
+                    <div class="search">
+                        <div class="search-container">
+                            <input type="text" class="search-input">
+                            <button class="search-button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="add_select d-flex align-items-center gap-2">
+                    <div class="add_user">
+                        <button type="button" class="btn text-white" style="background-color: #ed5026;">
+                            <span class="ms-1">
+                                <i class="fa-regular fa-user text-white"></i>
+                            </span>
+                            إضافة عميل جديد
+                        </button>
+                    </div>
+                    <div class="select_num overflow-x-auto d-flex gap-1 py-2">
+                        <select name="num_order_page" id="num_order_page">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table Users -->
+            <div class="table_cont mt-2 rounded-2 d-flex flex-column gap-2">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID رقم العميل</th>
+                            <th scope="col">اسم العميل</th>
+                            <th scope="col">رقم الجوال</th>
+                            <th scope="col">العنوان</th>
+                            <th scope="col">آخر طلب</th>
+                            <th scope="col">إجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="num fw-normal">
+                                513
+                            </th>
+                            <td class="user_name fw-normal">
+                                <i class="fas fa-user-large ms-2"></i>
+                                اسم العميل
+                            </td>
+                            <td class="phone_user fw-normal">
+                                رقم العميل
+                            </td>
+                            <td class="address_user fw-normal">
+                                عنوان العميل
+                            </td>
+                            <td class="last_order fw-normal">
+                                <span class="time ms-2">4:45</span>
+                                <span class="date">20/02/2023</span>
+                            </td>
+                            <td class="user_edit fw-normal">
+                                <div class="btns d-flex gap-3">
+                                    <button class="btn add rounded-3" style="background-color: #ed5026;">
+                                        <i class="fas fa-plus text-light"></i>
+                                    </button>
+                                    <button class="btn edit rounded-3" style="background-color: #09aa29;">
+                                        <i class="fas fa-pen text-light"></i>
+                                    </button>
+                                    <button class="btn remove rounded-3" style="background-color: #ff0000;">
+                                        <i class="fas fa-trash-can text-light"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- End Content -->
+        
+    </div>
+    <!-- End page -->
+    
+    <!-- ************************************************* -->
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
