@@ -351,6 +351,31 @@ nav .navbar-brand img {
     max-height: calc(100% - 85px);
     overflow-y: auto;
 }
+
+/* Select Item  */
+.content .pro_items .select-item {
+    position: relative;
+}
+.content .pro_items .select-item::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #2ab542;
+    color: white;
+    font-size: 20px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Select Item  */
+
+
 .content .pro_items .box_item {
     height: 200px;
     background-color: #b2b2b2;

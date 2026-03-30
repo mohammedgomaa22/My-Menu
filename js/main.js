@@ -7,7 +7,9 @@ const num = document.querySelector(".counter .num");
 const deleteItem = document.querySelectorAll(".item button.bin");
 // ------
 const cartBtn = document.querySelector(".open_close_cart"),
-    sidebar = document.querySelector(".cart");
+sidebar = document.querySelector(".cart");
+// ------
+const boxItem = document.querySelectorAll(".pro_items .row .box_item");
 // ------------------------------------
 
 // Chose Page from links
@@ -81,8 +83,12 @@ openCart();
 
 // ------------------------------------
 
-// Create Select Option
-// const createOrderPage = () => {
-    
-// };
-// createOrderPage();
+// Select Item
+const selectItem = () => {
+    boxItem.forEach((select) => {
+        select.addEventListener("click", () => {
+            select.classList.toggle("select-item")
+        })
+    })
+};
+selectItem();
